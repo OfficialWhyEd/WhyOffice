@@ -8,6 +8,7 @@ import { fileRoutes } from './files.js';
 import { githubRoutes } from './github.js';
 import { pageRoutes } from './pages.js';
 import { searchRoutes } from './search.js';
+import { vetrinaRoutes } from './vetrina.js';
 
 export const routes: readonly Route[] = [
   // Anyone.
@@ -34,6 +35,8 @@ export const routes: readonly Route[] = [
   fileRoutes.changedFile,
   fileRoutes.docs,
   searchRoutes.search,
+  vetrinaRoutes.lista,
+  vetrinaRoutes.video,
   githubRoutes.github,
   pageRoutes.office,
   pageRoutes.lite,

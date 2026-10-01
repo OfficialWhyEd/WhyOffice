@@ -1,0 +1,23 @@
+{
+  "_come_si_legge": "Una voce = una stanza. Per aggiungerne una: copia una voce, cambia id e nome, scegli una porta libera. Poi: npm run build e riavvia. Porte libere sul muro nord: u 6 (usata dalla Vetrina) e u -3.9. Ovest e sud sono pieni di finestre e mobili.",
+  "stanze": [
+    {
+      "id": "vetrina",
+      "nome": "Vetrina",
+      "porta": { "lato": "nord", "u": 6 },
+      "forma": { "larghezza": 10, "profondita": 15, "altezza": 4.4 },
+      "colori": { "muri": "#0e0e10", "pavimento": "#d9d6cf", "linea": "#1f3bff" },
+      "muri": {
+        "sinistra": { "tipo": "video", "quanti": 2 },
+        "fondo": { "tipo": "video", "quanti": 2 },
+        "destra": { "tipo": "video", "quanti": 2 }
+      },
+      "video": { "da": "galleria", "ordine": "nuovi" },
+      "oggetti": [
+        { "tipo": "panca", "x": 7.5, "z": 0, "lunga": 3 },
+        { "tipo": "cubo", "x": 3.2, "z": -3.2 },
+        { "tipo": "cubo", "x": 3.2, "z": 3.2 }
+      ]
+    }
+  ]
+}

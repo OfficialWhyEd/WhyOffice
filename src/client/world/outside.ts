@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { dentroUnaStanza } from './office/stanze';
 import { ELEVATOR, ELEVATOR_FRONT, FLOOR, ROAD, SLAB, STREET_Y, WALL_T } from '../../shared/layout';
 import { LOT, SIDE_LOT } from '../../shared/garage';
 import { STREET_END, shoreX } from '../../shared/scenic';
@@ -358,6 +359,7 @@ export function buildStreet(group: THREE.Group, colliders: Collider[], night: Ni
     [23, -19, 1.1],
   ];
   for (const [x, z, s] of trees) {
+    if (dentroUnaStanza(x, z, 3)) continue;
     const t = tree(s);
     t.position.set(x, G, z);
     forest.add(t);

@@ -43,6 +43,7 @@ import { installDog } from './features/dog';
 import { installEmotes } from './features/emotes';
 import { installGolf } from './features/golf';
 import { installGong } from './features/gong';
+import { installStanze } from './features/stanze';
 import { installGallery, installHanging } from './features/hanging';
 import { installHerald } from './features/herald';
 import { installHud } from './features/hud';
@@ -99,6 +100,7 @@ parts.confetti = new Confetti((x, z, y) => groundAt(ctx.player.colliders, x, z, 
 ctx.scene.add(parts.confetti.mesh);
 parts.tv = installTv(ctx, { shares: () => parts.talk.currentShares(), watch: () => parts.talk.watchShare() });
 parts.arcade = installArcade(ctx);
+installStanze(ctx);
 parts.rooftop = installRooftop(ctx, { ambient: parts.stage.ambient, hemi: parts.stage.hemi });
 
 // You, and how you talk to the office.

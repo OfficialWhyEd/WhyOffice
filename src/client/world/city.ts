@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { dentroUnaStanza } from './office/stanze';
 import { FLOOR, SLAB, STREET_Y, WALL_T, roofDrop } from '../../shared/layout';
 import { mulberry32 } from '../../shared/rng';
 import type { NightParts } from './outside';
@@ -377,6 +378,7 @@ export function buildCity(night: NightParts): City {
     // Clear of the back office, when a floor's built out into one (see WING).
     [21, -20],
   ]) {
+    if (dentroUnaStanza(x, z, 3)) continue;
     const t = tree(r);
     t.position.set(x, 0, z);
     parks.add(t);
