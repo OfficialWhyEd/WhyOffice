@@ -34,10 +34,16 @@ agent-office fa gia' molto. Lo usiamo, non lo riscriviamo.
 ## Le fasi
 Ogni fase finisce con una cosa che tu vedi e provi. Una fase alla volta.
 
-### Fase 0. Casa (oggi)
+### Fase 0. Casa e programma
 - [x] Repo WhyOffice sua, privata, con tutta la storia.
 - [ ] Un doppio clic per aprirlo: AVVIA-WHYOFFICE.cmd.
 - [ ] Aprirlo dall'iPad. Serve un tuo si': apre l'ufficio alla rete di casa, con password.
+- [ ] Un vero programma, come WhyWidget: WhyOffice.exe con la sua icona e la sua finestra.
+      Non una pagina del browser: un gioco a tutti gli effetti, si apre e si gioca.
+      Strada: exe che accende l'ufficio e lo apre in una finestra sua a schermo intero.
+- [x] Logo ufficiale: why/logo/whyoffice-logo-ufficiale.png (scatola aperta, "why" bianco, "Office" su nero).
+- [ ] Secondo logo con Aphelios: da ritrovare.
+- [ ] Il logo dentro: icona del programma, schermata di avvio, insegna 3D nell'ufficio.
 Prova: lo apri dal PC e dall'iPad.
 
 ### Fase 1. Le sessioni vere entrano in ufficio
