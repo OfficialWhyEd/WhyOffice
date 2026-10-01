@@ -1,0 +1,72 @@
+
+/* ---------- WhyOffice (why/why.css, appended by why/skin.ts) ----------
+   Bone paper, near-black ink, hairlines, one electric blue. Archivo for text, Geist Mono for the
+   small labels. References: fenrir.dsgn (fine line, one dry color), morrre.dsgn. No orange. */
+
+@font-face { font-family: 'Archivo'; src: url('/fonts/Archivo.ttf') format('truetype'); font-weight: 100 900; font-stretch: 62% 125%; font-display: swap; }
+@font-face { font-family: 'Geist Mono'; src: url('/fonts/GeistMono-Medium.woff2') format('woff2'); font-weight: 500; font-display: swap; }
+
+:root {
+  --ink: #0b0b0c;
+  --paper: rgba(244, 242, 236, .92);
+  --paper-2: #e8e5dd;
+  --accent: #1f3bff;
+  --accent-ink: #ffffff;
+  --muted: #6b6a66;
+  --good: #10a86a;
+  --warn: #f2cf3c;
+  --bad: #e5243b;
+  --info: #1f3bff;
+  --line: rgba(11, 11, 12, .22);
+  --border: rgba(11, 11, 12, .22);
+  --card: #f4f2ec;
+  --bg: #ecebe6;
+  --shadow: 0 1px 0 rgba(11, 11, 12, .04), 0 18px 40px -18px rgba(11, 11, 12, .35);
+  --radius: 8px;
+  --font: 'Archivo', system-ui, -apple-system, sans-serif;
+  --mono: 'Geist Mono', ui-monospace, Consolas, monospace;
+}
+
+body { font-stretch: 96%; letter-spacing: -.005em; }
+
+/* Glass over the 3D scene: the HUD floats, it doesn't sit on it. */
+.panel, .modal, .toast {
+  background: var(--paper);
+  -webkit-backdrop-filter: blur(14px) saturate(1.2);
+  backdrop-filter: blur(14px) saturate(1.2);
+  box-shadow: var(--shadow);
+}
+.modal { background: #f4f2ec; }
+
+/* Small caps of the interface: mono, wide, quiet. */
+.side h3, .pill, .key, .project-meta {
+  font-family: var(--mono);
+  font-weight: 500;
+  letter-spacing: .02em;
+}
+.side h3, .pill, .key { text-transform: uppercase; font-size: 10.5px; letter-spacing: .08em; }
+.side h3 { color: var(--muted); }
+
+.btn { font-weight: 600; background: rgba(255, 255, 255, .6); transition: background .15s, border-color .15s, color .15s; }
+.btn:hover { background: #fff; border-color: var(--ink); }
+.btn:active { transform: none; }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.btn.primary:hover { background: #0f2be0; }
+.btn.on { background: var(--ink); border-color: var(--ink); color: #f4f2ec; }
+
+.modal header, .modal footer { background: transparent; }
+.modal header h2 { font-weight: 600; font-size: 16px; letter-spacing: -.01em; }
+
+.dot { border-width: 0; }
+.pill { border-color: transparent; }
+.swatch { border: 1px solid var(--line); }
+.swatch.sel { outline: 1.5px solid var(--accent); }
+
+/* The floor's name: the WhyOffice mark. */
+.project-name { font-weight: 700; letter-spacing: -.02em; font-stretch: 110%; }
+
+/* Sign-in pages. */
+.card { background: #f4f2ec; box-shadow: var(--shadow); }
+body:has(> .card) { background: radial-gradient(circle at 50% 30%, #ffffff 0, #ecebe6 60%); }
+.card button { background: var(--ink); border-color: var(--ink); }
+.card button:hover { background: var(--accent); border-color: var(--accent); }
