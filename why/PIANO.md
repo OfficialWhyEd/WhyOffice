@@ -1,7 +1,9 @@
 # WhyOffice: il piano (01/10/2026)
 
 Repo: github.com/OfficialWhyEd/WhyOffice (privata). Cartella: E:\Dev\WhyOffice.
-Liste di partenza: E:\Lavori\WHYOFFICE-VISIONE-01-10.md e WHYOFFICE-CHECKLIST-01-10.md.
+Lista principale delle idee: E:\Lavori\WHYOFFICE-CHECKLIST-01-10.md.
+La tiene aggiornata Codex: rileggerla sempre prima di lavorare, e portare qui le idee nuove.
+Altra lista: E:\Lavori\WHYOFFICE-VISIONE-01-10.md.
 
 ## L'idea in una riga
 Un ufficio dove ogni sessione e ogni agente e' una persona.
@@ -36,8 +38,8 @@ Ogni fase finisce con una cosa che tu vedi e provi. Una fase alla volta.
 
 ### Fase 0. Casa e programma
 - [x] Repo WhyOffice sua, privata, con tutta la storia.
-- [ ] Un doppio clic per aprirlo: AVVIA-WHYOFFICE.cmd.
-- [ ] Aprirlo dall'iPad. Serve un tuo si': apre l'ufficio alla rete di casa, con password.
+- [x] Un doppio clic per aprirlo: AVVIA-WHYOFFICE.cmd (rete di casa, con password).
+- [x] Dall'iPad e dall'iPhone: tasto WhyOffice in WhyOcto. Provato con why/prova-ipad.mjs.
 - [ ] Un vero programma, come WhyWidget: WhyOffice.exe con la sua icona e la sua finestra.
       Non una pagina del browser: un gioco a tutti gli effetti, si apre e si gioca.
       Strada: exe che accende l'ufficio e lo apre in una finestra sua a schermo intero.
@@ -85,6 +87,7 @@ Prova: un dipendente Gemini fa un lavoro vero e la spesa resta zero.
 - Paga mensile in punti, legata alla cintura.
 - Orari: chi lavora la mattina, chi la sera, chi quando non ci sei.
 - Ognuno ha la sua voce Edge.
+- Nelle pause scelgono liberamente cosa fare: girare, guardare i quadri, scoprire il lavoro degli altri.
 - Capiscono quando sei nervoso dal modo in cui scrivi, e si comportano di conseguenza.
 Prova: parli con uno e risponde con la sua voce e il suo carattere.
 
@@ -99,6 +102,8 @@ Prova: trovi nella casella un biglietto di un agente e gli rispondi.
 - Una stanza per ogni progetto e skill, con un agente che la segue (prima: WhyMotion e video).
 - Il tuo ufficio personale: telecamere su ogni stanza e statistiche di tutti.
 - Stanza segreta dei file: ogni file e' un quadro che si apre.
+- Quadri con i lavori degli agenti: risultati, codice, cose belle da mostrare. Accanto, la classifica.
+- Stanze per esperimenti e altri usi, da decidere man mano.
 - Piani e stanze che portano alle cartelle del PC. Teletrasporto.
 - Zona tranquilla. Mini Aphi che gira per l'ufficio.
 - Stanza lingue (giapponese con insegnante e compagni).
@@ -110,6 +115,10 @@ Prova: chiedi una stanza e ci entri.
 - Ottimizzatori: comprimono e fanno risparmiare token, sempre.
 - Guardiani.
 Prova: la mattina trovi in casella cosa hanno scoperto.
+
+### Fase 8b. Raccontare l'ufficio
+- Montaggio interno: preparare e montare contenuti di quello che succede.
+- Piu' avanti: WhyOffice in diretta e video delle stanze. Niente pubblicazione per ora.
 
 ### Fase 9. Lontano
 Solo quando video e WhyMotion sono completi e deterministici.

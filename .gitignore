@@ -5,3 +5,4 @@ dist
 .DS_Store
 pw.txt
 __pycache__/
+why/avvio*.log
