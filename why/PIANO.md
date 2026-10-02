@@ -1,3 +1,42 @@
+# WhyOffice: indirizzo per Claude (02/10/2026)
+
+## Parti da questo chiarimento di Whyed
+
+La repo agent-office e' la base dell'ambiente 3D. WhyOffice deve diventare il modo di entrare nel suo sistema personale: sessioni correnti, subagenti, cartelle, strumenti, lavori e risultati reali. Conservare il motore e il progetto E:\Dev\WhyOffice. GitHub resta uno strumento per il codice; non delimita tutto l'ufficio.
+
+Letture selettive:
+- why/01-SPECIFICA-WHYOFFICE.md: comprensione approfondita, evidenze sul codice, contratti proposti e percorso end-user.
+- why/02-IDEE-COMPLEMENTARI.md: prima leggere la correzione di comprensione in apertura. Contiene 100 voci approfondite e 30 schede trasversali (101-130) con situazione, meccanismo, costo e prova proposta. Molte voci approfondiscono requisiti gia espressi: non presentarle come invenzioni nuove. Leggere poi solo il tema utile.
+- E:\Lavori\WHYOFFICE-CHECKLIST-01-10.md: unica raccolta delle idee, comprese proposte GPT e correzioni. Cercare la categoria necessaria, senza riversare tutto automaticamente nel contesto.
+- C:\Users\Whyed\AI-LOCALE\00-SPECIFICA.md: solo quando si collega il sistema Why locale.
+
+## Prossima parte proposta da Codex, da validare con Whyed
+
+Una dimostrazione completa del collegamento reale, non nuove stanze decorative:
+1. Una sessione gia' aperta compare con la propria identita', senza avviarne una copia.
+2. Badge e postazione mostrano stato osservato, ultimo aggiornamento e dati disponibili; un subagente reale e' distinto e collegato al padre.
+3. Una stanza accede a una cartella non Git e un quadro apre un risultato reale, senza spostare i file.
+4. Riavvio dell'ufficio senza perdita di associazioni o doppio conteggio dei token.
+5. Misurazione e correzione del lag sul percorso usato da Whyed. Supporto iPad provato sul dispositivo reale prima di dichiararlo finito.
+
+Prima di codice: validare la proposta tecnica concreta. Poi lavorare in un worktree secondo le regole della repo. Nessun hook globale o blocco su Claude/Codex installato implicitamente.
+
+## Tre risultati dell'analisi che evitano errori
+
+- La base accetta gia' una cartella locale senza repo obbligatoria. Estendere le risorse; non riscrivere il mondo da zero.
+- usage.ts somma gia' i figli Claude nel lavoratore padre. Per la leaderboard separare consumo proprio, figli e totale, senza contarli due volte.
+- Gli hook attuali si riferiscono a worker gia' registrati; Codex esclude figli nel suo percorso di hook/usage. Il badge delle sessioni esterne e dei subagenti richiede un adattatore preciso.
+
+## Qualita' e stato
+
+Whyed ha denunciato lag grave e distanza dal proprio sistema locale. Non presentarli come risolti. Ombre, outline, pixel ratio e video simultanei sono candidati di profiling, non diagnosi provate.
+La prova gia' scritta con Playwright usa Chrome e dispositivi emulati; non certifica fluidita' di iPad/iPhone fisici.
+Il documento di specifica e' preparazione di prodotto e proposta tecnica, non codice implementato. Le idee su identita', voci, turni, API, editing, didattica e addestramento restano conservate e collegate alle dipendenze.
+
+## Piano precedente conservato
+
+Il testo seguente e' il piano di Claude del 01/10, conservato integralmente come riferimento storico. Le spunte sono dichiarazioni di quel piano, non nuove verifiche. Ordine, metriche ('risparmio Opus'), 'emozioni vere', copertura Codex e completamento iPad vanno riletti alla luce della specifica del 02/10; non sono nuove decisioni di Whyed.
+
 # WhyOffice: il piano (01/10/2026)
 
 Repo: github.com/OfficialWhyEd/WhyOffice (privata). Cartella: E:\Dev\WhyOffice.
@@ -133,6 +172,13 @@ Solo quando video e WhyMotion sono completi e deterministici.
 - Se ci sono troppe cose, te lo dico.
 - Tutto si puo' annullare: ogni passo e' un commit.
 - Gli aggiornamenti di agent-office li prendiamo dal remoto upstream, quando servono.
+
+## Stato verificato (02/10/2026)
+- Controllo tipi: nessun errore.
+- Test: 457 passano, 56 falliscono. I falliti lanciano agenti finti, o leggono i percorsi
+  con la barra di Linux: su Windows non vanno. Provato: client-registry fallisce uguale
+  sul codice originale (commit 1bc3028), quindi non e' colpa nostra.
+- Aperto da WhyOcto come iPad e iPhone: si arriva alla scelta del personaggio, zero errori.
 
 ## Attenzione
 - Il PC ha una GTX 1050: "estremamente realistico" va dosato. L'iPad aiuta.
